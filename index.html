@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Subject" content="Bluesquare_site">
+    <meta name="Title" content="Bluesquare">
+    <meta name="Keywords" content="Bluesquare">
+    <meta name="Description" content="Bluesquare">
+    <meta name="Author" content="kangsang">
+    <meta name="Publisher" content="kangsang">
+    <meta name="Classification" content="Bluesquare">
+    <meta name="Location" content="seoul in korea">
+    <meta name="Author-Date" content="2020.01.07">
+    <meta name="Copyright" content="none">
+    <meta name="Robots" content="index,follow">
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.easie.js"></script>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/headerfooter.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/scrip.js" defer></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="wrap">
+        <header>
+            <a href="index.html" id="logo"><img src="img/logo.png" alt="logo"></a>
+
+            <img src="img/menu1.png" alt="menu" id="menu">
+            <nav>
+                <ul id="gnb">
+                    <li><a href="#">블루스퀘어</a></li>
+                    <li><a href="#">공연일정</a></li>
+                    <li><a href="#">대관안내</a></li>
+                    <li><a href="#">고객센터</a></li>
+
+                </ul>
+
+                <ul id="lnb">
+                    <li>
+                        <ul class="lnbSub">
+                            <li><a href="#">소개</a></li>
+                            <li><a href="#">이용안내</a></li>
+                            <li><a href="#">좌석배치도</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="lnbSub">
+                            <li><a href="#">공연일정</a></li>
+                            <li><a href="#">전체공연</a></li>
+                            <li><a href="#">예매안내</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="lnbSub">
+                            <li><a href="#">대관시설</a></li>
+                            <li><a href="#">대관료</a></li>
+                            <li><a href="#">대관신청</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="lnbSub">
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </li>
+                    <a href="#" id="closeBt"><img src="img/closeBt.png" alt="closeBt">&nbsp;닫기</a>
+                </ul>
+
+            </nav>
+            <ul id="topIcon">
+                <li><a href="#"><img src="img/search.png" alt="search" id="search"></a></li>
+                <li><a href="#"><img src="img/calender.png" alt="calender" id="calender"></a></li>
+            </ul>
+        </header>
+
+        <main>
+
+            <ul id="tabMenu_list">
+                <li class="tab on"><a href="#">신한카드홀</a></li>
+                <li class="tab"><a href="#">마스터카드홀</a></li>
+                <li class="tab"><a href="#">카오스홀</a></li>
+            </ul>
+
+            <div id="bannerBg">
+                <div id="nowHall">
+                    <a href="#" id="selectHall">신한카드</a>
+                </div>
+
+                <figure id="selstonse">
+                    <ul class="selectConsertInfo stones"><a href="#">
+                            <li class="concertKind">콘서트</li>
+                            <li class="concertName">페퍼스톤 콘서트</li>
+                            <li class="concertDate">2021.12.11 SAT [PM 07:00]</li>
+                        </a>
+                    </ul>
+                    <a href="#" class="stonsePoster"></a>
+                </figure>
+
+
+                <figure id="selfranken">
+                    <ul class="selectConsertInfo franken"><a href="#">
+                            <li class="concertKind">뮤지컬</li>
+                            <li class="concertName">프랑켄슈타인</li>
+                            <li class="concertDate">2021.11.24 ~ 20.02.20</li>
+                        </a>
+                    </ul>
+                    <a href="#" class="frankenPoster"></a>
+                </figure>
+
+
+                <figure id="selawards">
+                    <ul class="selectConsertInfo awards"><a href="#">
+                            <li class="concertKind">시상식</li>
+                            <li class="concertName">한국 뮤지컬 어워드</li>
+                            <li class="concertDate">2022.01.10 MON [PM 07:00]</li>
+                        </a>
+                    </ul>
+                    <a href="#" class="awardsPoster"></a>
+                </figure>
+
+
+            </div>
+            <div class="concertList">
+                <a href="#" id="mainLeft"><img src="img/nextIcon_left.png" alt=""></a>
+                <ul class="posterList_select">
+                    <li id="select1" class="post"><img src="img/list1.gif" alt=""></li>
+                    <li id="select2" class="post  on1"><img src="img/list2.png" alt=""></li>
+                    <li id="select3" class="post"><img src="img/list3.gif" alt=""></li>
+                </ul>
+                <a href="#" id="mainRight"><img src="img/nextIcon_right.png" alt=""></a>
+            </div>
+        </main>
+        <div id="centerIcon">
+            <ul>
+                <li><a href="#"><img src="img/cal.png" alt="cal">공연일정</a></li>
+                <li><a href="#"><img src="img/seat.png" alt="seat">좌석안내</a></li>
+                <li><a href="#"><img src="img/map.png" alt="map">오시는길</a></li>
+                <li><a href="#"><img src="img/Concerthall.png" alt="Concerthall">공연장안내</a></li>
+                <li><a href="#"><img src="img/concert.png" alt="concert">공연안내</a></li>
+                <li><a href="#"><img src="img/recruitment.png" alt="recruitment">채용안내</a></li>
+                <li><a href="#"><img src="img/notice.png" alt="notice">공지사항</a></li>
+                <li><a href="#"><img src="img/amenities.png" alt="amenities">편의시설</a></li>
+            </ul>
+        </div>
+
+        <section>
+            <figure id="selection1">
+                <div class="tabMenu">
+                    <ul class="selGnb">
+                        <li class="selLnb"><a href="#">공지사항</a></li>
+                        <li class="selLnb on2"><a href="#">대관안내</a></li>
+                        <li class="selLnb"><a href="#">공연안내</a></li>
+                        <li class="selLnb"><a href="#">스폰서</a></li>
+                    </ul>
+                </div>
+                <div class="tabShow">
+                    <ul id="renConcerthall">
+                        <li>
+                            <div class="ConcerthallLeft">신한카드홀</div>
+                            <div class="ConcerthallRight">콘서트, 연극, 공연, 팬미팅 등</div>
+                        </li>
+                        <li>
+                            <div class="ConcerthallLeft">마스터카드홀</div>
+                            <div class="ConcerthallRight">콘서트, 연극, 공연, 팬미팅 등</div>
+                        </li>
+                        <li>
+                            <div class="ConcerthallLeft">카오스홀</div>
+                            <div class="ConcerthallRight">북콘서트, 강연회, 세미나 등
+                            </div>
+                        </li>
+                        <li>
+                            <div class="ConcerthallLeft">연습실</div>
+                            <div class="ConcerthallRight">리허설, 연습, 오디션 등
+                            </div>
+                        </li>
+                        <li>
+                            <div class="ConcerthallLeft">NEMO</div>
+                            <div class="ConcerthallRight">전시, 컨퍼런스, 행사 등</div>
+                        </li>
+                    </ul>
+                </div>
+            </figure>
+
+            <figure id="selection2">
+                <h1>공연연출팀</h1>
+                <a href="#">
+                    <img src="img/section2_1.png" alt="img">
+                    <span>THE MOST CREATIVE TEAM</span> <br><br>
+                    <p> 인터파크 씨어터 공연 연출팀은 수년 간에 걸친
+                        노하우와 아이디어를 기반으로 대형 콘서트에서
+                        부터 BTL이벤트, 페스티벌, 무용공연 등 장르
+                        구분 없는 국내 최고의 라이브 엔터테인먼트의
+                        공연 연출 제작 사업을 운영하고 있습니다
+                    </p>
+                </a>
+                <ul class="sel2List">
+                    <li class="on3"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </figure>
+
+            <figure id="selection3">
+                <h1>코시국 문화생활</h1>
+                <ul>
+                    <li><img src="img/section3_1.png" alt="공연장소독">공연장소독</li>
+                    <li><img src="img/section3_2.png" alt="손소독">손소독</li>
+                    <li><img src="img/section3_3.png" alt="손씻기">손씻기</li>
+                </ul>
+            </figure>
+
+            <figure id="selection4">
+                <h1>FAQ</h1>
+                <span>자주묻는 질문</span>
+                <span>+</span>
+                <div id="sec4Faq">
+                    <ul>
+                        <a href="#" class="faqList">
+                            <li class="faqLeft">주차 안내사항</li>
+                            <li class="faqRight">22.01.11</li>
+                        </a>
+                    </ul>
+                    <ul>
+                        <a href="#" class="faqList">
+                            <li class="faqLeft">전기차 충전안내</li>
+                            <li class="faqRight">21.11.05</li>
+                        </a>
+                    </ul>
+                    <ul>
+                        <a href="#" class="faqList">
+                            <li class="faqLeft">스테이지631이란?</li>
+                            <li class="faqRight">21.07.01</li>
+                        </a>
+                    </ul>
+                    <ul>
+                        <a href="#" class="faqList">
+                            <li class="faqLeft">대관안내</li>
+                            <li class="faqRight">21.03.20</li>
+                        </a>
+                    </ul>
+                    <ul>
+                        <a href="#" class="faqList">
+                            <li class="faqLeft">공연일정 연기시</li>
+                            <li class="faqRight">20.12.11</li>
+                        </a>
+                    </ul>
+                </div>
+            </figure>
+        </section>
+
+        <footer>
+            <div id="footer">
+                <ul id="footLeft">
+                    <li><span>Sponsor Link</span></li>
+                    <li>
+                        <ul id="SponsorList">
+                            <li><a href="#"><img src="img/shinhan.png" alt="sponsor"></a></li>
+                            <li><a href="#"><img src="img/marster.png" alt="sponsor"></a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul id="footCenter">
+                    <li><span>고객문의</span></li>
+                    <li>
+                        <ul id="center">
+                            <li><a href="#">Tel : 1544-1591 [장애인 전용 안내포함]</a></li>
+                            <li><a href="#">E-mail : bluesquare@interpark.com</a></li>
+                        </ul>
+                    </li>
+                    
+                </ul>
+                <ul id="footright">
+                    <li><a href="#">개인정보 처리방침</a></li>
+                    <li><a href="#">e-clean Center</a></li>
+                    <li><a href="#">주차안내</a></li>
+                </ul>
+            </div>
+            <p id="footbottom">Copyright © INTERPARK ALL Rights Reserved.</p>
+        </footer>
+
+        <div id="topBox">
+            top
+        </div>
+
+    </div>
+</body>
+
+</html>
