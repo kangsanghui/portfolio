@@ -1,0 +1,33 @@
+@charset "utf-8";
+@font-face {
+    font-family:'Cafe24Ohsquare';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/Cafe24Ohsquare.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Cafe24Ssurround';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400&display=swap');
+
+body{line-height: 1;}
+html, body, div, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, address, dl, dt, dd, ol, ul, li, fieldset, form, legend, table, caption, tbody, tfoot, thead, tr, th, td, input, select, textarea{margin:0; padding:0;}
+h1, h2, h3, h4, h5, h6{font-size:100%;}
+img, fieldset{border:0px;}
+table{border-collapse:collapse;border-spacing: 0;}
+ul, ol, li{list-style:none;}
+address, em{font-style:normal;}
+li img, object{vertical-align:top;}
+input, select, textarea, form img{vertical-align:middle;}
+a{ outline:0; text-decoration:none; border:none; color:#444;}
+body { font: 12px /1.2 Dotum, "Noto Sans KR", arial; color:#666; }
+.noMargin { margin:0px;}
+*{font-family: 'Noto Sans KR', sans-serif; margin:0;padding:0;vertical-align:top;border:0;}
+
+header, section, footer, aside, nav, main, article, figure {display: block;}
+.floatClear:after{content:'';display:block;clear:both;}
+.hidden{display:none;}
+.blind{display:block;text-indent:-2000px;overflow:hidden;}
