@@ -1,0 +1,838 @@
+*{
+    box-sizing: border-box;
+}
+#wrap{
+    width: 100%;
+    position: relative;
+}
+
+main{
+    width: 1340px;
+    height: 735px;
+    margin: 134px auto;
+    position: relative;
+}
+
+#tabMenu_list{
+    width: 136px;
+    height: 230px;
+}
+
+.tab{
+    width: 124px;
+    height: 65px;
+    margin-left: -117px;
+    background: url(../img/main_tab.png) no-repeat left top;
+    background-size: 124px 65px;
+    text-align: center;
+    line-height: 65px;
+}
+.tab.on{
+    width: 144px;
+    height: 76px;
+    margin-left: -143px;
+    background-size:144px  76px;
+}
+
+.tab>a{
+    font-size: 13px;
+    margin: 20px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.tab.on>a{
+    font-size: 16px;
+}
+
+
+
+#bannerBg{
+    width: 1340px;
+    height: 587px;
+    position: absolute;
+    top: 0;
+    left: 0%;
+    background: url(../img/mainBg.png) no-repeat left top;
+    background-size: 1340px 587px;
+}
+
+#nowHall{
+    width: 131px;
+    height: 67px;
+    background: #2097d5;
+    position: absolute;
+    top: -34px;
+    left: 55px;
+    text-align: center;
+    line-height: 67px;
+}
+
+#nowHall>a{
+    font-size: 24px;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #ffffff;
+}
+
+/*stonse 콘서트*/
+
+.stones{
+    position: absolute;
+    top: 69px;
+    left: 55px;
+}
+
+.stones>li{
+    font-family: 'Noto Sans KR', sans-serif;
+    margin-top: 15px;
+}
+
+.concertKind{ font-size: 24px; }
+.concertName{ font-size: 40px; font-family:'Cafe24Ssurround'} 
+.concertDate{ font-size: 20px; }
+
+.stonsePoster{
+    display: inline-block;
+    width: 473px;
+    height: 666px;
+    background:url(../img/list2.png) no-repeat left top;
+    background-size: 473px 666px;
+    position: absolute;
+    top: -40px;
+    right: 56px;
+    box-shadow: 0 0 10px #999;
+}
+
+
+/*franken 뮤지컬*/
+
+.franken{
+    position: absolute;
+    top: 69px;
+    left: 55px;
+}
+
+.franken>li{
+    font-family: 'Noto Sans KR', sans-serif;
+    margin-top: 15px;
+}
+
+.concertKind{ font-size: 24px; }
+.concertName{ font-size: 40px; font-family:'Cafe24Ssurround'} 
+.concertDate{ font-size: 20px; }
+
+.frankenPoster{
+    display: inline-block;
+    width: 473px;
+    height: 666px;
+    background:url(../img/list1.gif) no-repeat left top;
+    background-size: 473px 666px;
+    position: absolute;
+    top: -40px;
+    right: 56px;
+    box-shadow: 0 0 10px #999;
+}
+
+
+/*awards 시상식*/
+
+.awards{
+    position: absolute;
+    top: 69px;
+    left: 55px;
+}
+
+.awards>li{
+    font-family: 'Noto Sans KR', sans-serif;
+    margin-top: 15px;
+}
+
+.concertKind{ font-size: 24px; }
+.concertName{ font-size: 40px; font-family:'Cafe24Ssurround'} 
+.concertDate{ font-size: 20px; }
+
+.awardsPoster{
+    display: inline-block;
+    width: 473px;
+    height: 666px;
+    background:url(../img/list3.gif) no-repeat left top;
+    background-size: 473px 666px;
+    position: absolute;
+    top: -40px;
+    right: 56px;
+    box-shadow: 0 0 10px #999;
+}
+
+#selawards, #selfranken{
+    display: none;
+}
+
+
+
+/* concert list */
+
+#mainLeft{
+    position: absolute;
+    bottom: 109px;
+}
+
+#mainRight{
+    position: absolute;
+    left: 500px;
+    bottom: 109px;
+}
+
+#select1{
+    width: 77px;
+    height: 107px;
+    position: absolute;
+    left: 146px;
+    bottom: 66px;
+}
+
+#select2{
+    width: 77px;
+    height: 107px;
+    position: absolute;
+    left: 285px;
+    bottom: 66px;
+}
+
+#select3{
+    width: 77px;
+    height: 107px;
+    position: absolute;
+    left: 430px;
+    bottom: 66px;
+}
+.posterList_select>li{z-index: 1;}
+.posterList_select>li>img{
+    width: 77px;
+    height: 107px; 
+
+}
+
+.on1{
+    width: 138px;
+    height: 194px;
+    position: absolute;
+    left: 260px;
+    bottom: 50px;
+}
+
+
+/*????????이미지 사이즈조절*/
+.on1>img{
+    width: 138px;
+    height: 194px;
+}
+
+
+
+/* centerIcon */
+
+#centerIcon{
+    width: 100%;
+    height: 164px;
+    background: #e9edf1;
+}
+#centerIcon>ul{
+    width: 1340px;
+    height: 96px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+#centerIcon>ul>li{
+    width: 65px;
+    height: 96px;
+    margin-top: 30px;
+    text-align: center;
+    padding: auto  0 auto 0;
+}
+
+
+/* 아이콘 중앙정렬,  문구 중앙정렬 여쭤보기 */
+#centerIcon>ul>li img{
+    margin-bottom: 20px;
+}
+
+#centerIcon>ul>li>a{
+    display: inline-block;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 13px;
+    line-height: 10px;
+    color: #347395;
+}
+
+
+/* select */
+
+section{
+    width: 1340px;
+    margin: 50px auto;
+    position: relative;
+}
+
+#selection1{
+    width: 643px;
+    height: 323px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 3px solid #2097d5;
+    display: flex;
+}
+
+.selGnb{
+    z-index: 5555;
+}
+.selLnb{
+    font-family:'Cafe24Ssurround';
+    color: #347395;
+}
+
+.selGnb>li{
+    width: 171px;
+    height: 80px;
+    text-align: center;
+    line-height: 75px;
+    font-family:'Cafe24Ssurround';
+    font-size: 24px;
+    border: 3px solid #2097d5;
+}
+
+.selGnb a{
+    display: inline-block;
+    width: 170px;
+    height: 80px;
+}
+/*백그라운드가 가려짐*/
+.selGnb>li.on2{
+    width: 190px;
+    height: 80px;
+    background: url(../img/sel.png) no-repeat center center;
+    background-size:cover;
+    border: none;
+}
+.on2>a{
+    color: #ffffff;
+    
+}
+.tabShow{
+    width: 473px;
+    height: 323px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#notice, #renConcerthall{
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.tabShow>ul>li{
+    display: flex;
+    justify-content: space-between;
+    height: 64px;
+    line-height: 64px;
+    margin: 0 50px 0 50px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 18px;
+}
+.ConcerthallLeft, .ConcerthallRight{
+    color: #347395;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.ConcerthallLeft{
+    font-weight: bold;
+    font-size: 18px;
+}
+.ConcerthallRight{
+    font-weight: lighter;
+    font-size: 12px;
+}
+/*  */
+#selection2{
+    width: 643px;
+    height: 323px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 3px solid #2097d5;
+    display: flex;
+}
+
+#selection2>h1{
+    margin: 20px;
+    font-size: 30px;
+    font-family:'Cafe24Ssurround';
+    color: #347395;
+}
+
+#selection2>a{
+    width: 610px;
+    height: 157px;
+    position: absolute;
+    top: 81px;
+    margin: 0 40px;
+}
+#selection2>a>img{
+    width: 285px;
+    height: 177px;
+}
+
+#selection2>a>span{
+    display: inline-block;
+    font-size: 18px;
+    margin-left: 10px;
+    color: #347395;
+    font-weight: bold;
+}
+#selection2>a>p{
+    display: inline-block;
+    width: 270px;
+    height: 156px;
+    margin-left: 10px;
+    position: absolute;
+    top: 35px;
+    right: 40px;
+    color: #347395;
+}
+
+.sel2List{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.sel2List>li{
+    width: 20px;
+    height: 20px;
+    border: 2px solid #2097d5;
+    margin-left: 10px;
+} 
+.on3{
+    width: 20px;
+    height: 20px;
+    background: #2097d5;
+}
+
+
+/* section3 */
+
+#selection3{
+    width: 643px;
+    height: 323px;
+    position: absolute;
+    top: 375px;
+    left: 0;
+    border: 3px solid #2097d5;
+    display: flex;
+}
+
+#selection3>h1{
+    font-size: 30px;
+    font-family: 'Cafe24Ssurround';
+    color: #347395;
+    margin: 20px;
+}
+
+#selection3>ul{
+    width: 350px;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -60%);
+    display: flex;
+    margin-top: 70px;
+    text-align: center;
+
+}
+
+#selection3>ul>li{
+    margin-left: 80px;
+    color: #347395;
+}
+
+#selection3>ul>li>img{
+    margin-bottom: 30px;
+}
+
+
+#selection3>ul>li:nth-child(1){
+    margin-left: 0px;
+}
+/* section4 */
+
+#selection4{
+    width: 643px;
+    height: 323px;
+    position: absolute;
+    top: 375px;
+    right: 0;
+    border: 3px solid #2097d5;
+    display: flex;
+}
+
+#selection4>h1{
+    font-size: 30px;
+    font-family: 'Cafe24Ssurround';
+    color: #347395;
+    margin: 20px;
+}
+
+#selection4>span:nth-child(2){
+    display: inline-block;
+    font-size: 14px;
+    margin-top: 35px;
+    margin-left: -15px;
+    font-family: 'Cafe24Ssurround';
+    color: #347395;
+}
+
+#selection4>span:nth-child(3){
+    font-size: 40px;
+    position: absolute;
+    font-weight: bold;
+    color: #347395;
+    top: 15px;
+    right: 20px;
+}
+
+#sec4Faq{
+    width: 600px;
+    position: absolute;
+    top: 65px;
+    left: 20px;
+}
+
+.faqList{
+    display: flex;
+    justify-content: space-between;
+}
+
+#sec4Faq>ul{
+    height: 50px;
+    line-height: 50px;
+}
+.faqLeft{
+    font-size: 16px;
+    color: #347395;
+}
+
+
+/* topBox */
+
+#topBox{
+    width: 30px;
+    height: 30px;
+    border: 3px solid #2097d5;
+    text-align: center;
+    line-height: 20px;
+    position: fixed;
+    right: 10%;
+    bottom: 50%;
+    cursor: pointer;
+    display: none;
+}
+
+@media screen and (min-width:840px) and (max-width:1040px) {
+    #wrap{width: 100%; overflow: hidden;}
+   #bannerBg{
+       width: 70%;
+   }
+   #tabMenu_list, #nowHall{
+       display: none;
+   }
+   .selectConsertInfo{
+       left: 50px;
+       top: 100px;
+   }
+   .stonsePoster, .frankenPoster, .awardsPoster{
+       width: 373px;
+       height: 90%;
+       right: 50px;
+       background-size: contain;
+       box-shadow: none;
+   }
+   .concertList{
+       width: 670px;
+       height: 100%;
+       margin-left: 50%;
+       transform: translateX(-80%);
+   }
+   #centerIcon{
+       padding: 0 20px;
+   }
+   #centerIcon>ul{
+       width: 100%;
+       flex-wrap: wrap;
+    }
+    #centerIcon>ul>li{
+        width: 55px;
+    }
+    #centerIcon>ul>li>a{
+        font-size: 12px;
+    }
+    #centerIcon img{
+        width: 100%;
+    }
+    section{width: 100%;}
+
+    #selection1{
+       width: 48%;
+       left: 0;
+    }
+    .selGnb>li{
+        width: 130px;
+        height: 77px;
+        text-align: center;
+    }
+    .selGnb>li>a{
+        display: block;
+        width: 130px;
+        height: 80px;
+        font-size: 0.75em;
+    }
+    .selGnb>li.on2{
+        width: 142px;
+        height: 90px;
+        background-size:142px 100px
+    }
+
+    .tabShow{
+        width: 310px;
+        height: 77px;
+    }
+    .tabShow>ul>li{
+        width: 290px;
+        height: 63px;
+        margin-left: 20px;
+        padding: 0 20px;
+    }
+    .ConcerthallLeft, .Concerthallright{
+        font-size: 0.8em;
+    }
+
+    #selection2{
+        width: 48%;
+        right: 0;
+    }
+    #selection2>a>img{
+        width: 30%;
+        height: 60%;
+        margin-top: 50px;
+        margin-left: -30px;
+    }
+
+    #selection2>a>span,
+    #selection2>a>p{
+        font-size: 0.95em;
+    }
+    #selection2>a>p{
+        width: 200px;
+        left: 160px;
+    }
+    #selection3{
+        width: 48%;
+        top: 366px;
+        left: 0;
+    }
+    #selection3>ul{
+        top: 40px;
+        left: 0;
+        justify-content: space-between;
+        transform: translate(0);
+        margin-left: 40px;
+    }
+    #selection3>ul>li{
+        width: 70px;
+        margin-left: 20px;
+    }
+    #selection3>ul>li:nth-child(1){
+        margin-top: 35px;
+    }
+    #selection3>ul>li:nth-child(3){
+        margin-top: 10px;
+    }
+    #selection3 img{
+        width: 70px;
+    }
+    #selection4{
+        width: 48%;
+        top: 366px;
+        right: 0;
+    }
+    #sec4Faq{
+        width: 100%;
+        padding: 0 50px 0 0;
+    }
+}
+
+@media screen and (min-width:0) and (max-width:840px) {
+    #wrap{width: 100%;height: 2960px;overflow: hidden;}
+   #tabMenu_list, #nowHall{
+       display: none;
+   }
+   .selectConsertInfo{
+    left: 35%;
+    transform: translateX(-80%);
+    top: 500px;
+    text-align: center
+   }
+   .stonsePoster, .frankenPoster, .awardsPoster{
+       width: 373px;
+       height: 90%;
+       left: 35%;
+       transform: translateX(-70%);
+       background-size: contain;
+       box-shadow: none;
+       border: 1px solid salmon;
+   }
+   .concertList{
+       width: 670px;
+       height: 180px;
+       position: absolute;
+       top: 650px;
+       left: 35%;
+       transform: translateX(-60%);
+       padding-right: 50px;
+   }
+   #centerIcon{
+       padding: 0 20px;
+   }
+   #centerIcon>ul{
+       width: 100%;
+       height: 96px;
+    }
+    #centerIcon>ul>li{
+        width: 60px;
+        height: 55px;
+    }
+    #centerIcon>ul>li>a{
+    display: inline-block;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 13px;
+    line-height: 10px;
+    color: #347395;
+    }
+    #centerIcon img{
+        width: 60px;
+        height: 65px;
+        background-color: none;
+    }
+    section{width: 100%;}
+
+    #selection1{
+       width: 100%;
+       left: 0;
+    }
+    .selGnb>li{
+        width: 171px;
+        height: 80px;
+        text-align: center;
+    }
+    .selGnb>li>a{
+        display: block;
+        width: 171px;
+        height: 80px;
+        font-size: 0.75em;
+    }
+    .selGnb>li.on2{
+        width: 190px;
+        height: 80px;
+        background: url(../img/sel.png) no-repeat center center;
+        background-size:cover;
+        border: none;
+    }
+
+    .tabShow{
+        width: 70%;
+        height: 77px;
+    }
+    .tabShow>ul>li{
+        width: 100%;
+        height: 63px;
+        margin-left: 20px;
+        padding: 0 50px 0 20px;
+    }
+    .ConcerthallLeft, .Concerthallright{
+        font-size: 1em;
+    }
+/*  */
+    #selection2{
+        width: 100%;
+        top: 340px;
+        width: 100%;
+    }
+    #selection2>a>img{
+        width: 285px;
+        height: 177px;
+        margin-top: -10px;
+        margin-left: -30px;
+    }
+
+    #selection2>a>span{
+        display: inline-block;
+        font-size: 18px;
+        margin: -50px 0 0  30px;
+        color: #347395;
+        font-weight: bold;
+
+    }
+    #selection2>a>p{
+        display: inline-block;
+        width: 50%;
+        height: 156px;
+        margin: -45px 0 0 150px;
+        color: #347395;
+        font-size: 16px;
+    }
+
+/*  */
+    #selection3{
+        width: 100%;
+        height: 323px;
+        position: absolute;
+        top: 680px;
+        left: 0;
+        border: 3px solid #2097d5;
+        display: flex;
+    }
+    #selection3>ul{
+        width: 80%;
+        top: 40px;
+        left: 45%;
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: space-between;
+    }
+    #selection3>ul>li{
+        width: 80px;
+        margin-left: 20px;
+    }
+    #selection3>ul>li:nth-child(1){
+        margin-top: 35px;
+    }
+    #selection3>ul>li:nth-child(3){
+        margin-top: 10px;
+    }
+    #selection3 img{
+        width: 80px;
+    }
+
+/*  */
+    #selection4{
+        width: 100%;
+        top: 1020px;
+        right: 0;
+    }
+    #sec4Faq{
+        width: 100%;
+        padding: 0 50px 0 0;
+    }
+}
+
